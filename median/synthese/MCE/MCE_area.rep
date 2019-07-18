@@ -1,0 +1,43 @@
+//  Precision RTL Synthesis 64-bit 2015.2.16 (PS2015.2.1 Production Release) Tue Jan  5 23:04:49 PST 2016
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2016, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Linux rdesouza@c127-15 #1 SMP Debian 3.16.7-ckt20-1+deb8u3 (2016-01-17) 3.16.0-4-amd64 x86_64
+//  
+//  Start time Fri Mar  4 18:18:14 2016
+
+***************************************************************
+Device Utilization for EP2C35F672C
+***************************************************************
+Resource                          Used    Avail   Utilization
+---------------------------------------------------------------
+IOs                               32      -            -
+LUTs                              24      33216     0.07%
+Registers                         0       33216     0.00%
+Memory Bits                       0       483840    0.00%
+DSP block 9-bit elems             0       70        0.00%
+---------------------------------------------------------------
+
+*********************************************
+
+Library: work    Cell: MCE    View: INTERFACE
+
+*********************************************
+
+  Cell                   Library  References     Total Area
+
+ VCC                     cycloneii     1 x
+ cycloneii_lcell_comb    cycloneii    24 x      1     24 LUTs
+
+ Number of ports :                      32
+ Number of nets :                       41
+ Number of instances :                  25
+ Number of references to this view :     0
+
+Total accumulated area : 
+ Number of LUTs :                       24
+ Number of accumulated instances :      25

@@ -1,0 +1,71 @@
+# //  ModelSim SE-64 10.4c Jul 19 2015 Linux 3.16.0-4-amd64
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# vsim tb_fpga.sv 
+# Start time: 00:19:58 on Apr 01,2016
+# ** Error: (vsim-19) Failed to access library 'tb_fpga' at "tb_fpga".
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# End time: 00:19:58 on Apr 01,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim work.tb_fpga
+# vsim work.tb_fpga 
+# Start time: 00:20:03 on Apr 01,2016
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): ../tb_src/tb_fpga.sv(61): (vopt-2122) Invalid format specification '%'.
+# ** Error: (vopt-2064) Compiler back-end code generation process terminated with code 2.
+# Error loading design
+# End time: 00:20:07 on Apr 01,2016, Elapsed time: 0:00:04
+# Errors: 2, Warnings: 0
+# A time value could not be extracted from the current line
+vsim work.fpga
+# vsim work.fpga 
+# Start time: 00:20:42 on Apr 01,2016
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.fpga(fast)
+vsim work.fpga
+# End time: 00:20:56 on Apr 01,2016, Elapsed time: 0:00:14
+# Errors: 0, Warnings: 0
+# vsim work.fpga 
+# Start time: 00:20:56 on Apr 01,2016
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.fpga(fast)
+vsim work.fpga
+# End time: 00:21:28 on Apr 01,2016, Elapsed time: 0:00:32
+# Errors: 0, Warnings: 0
+# vsim work.fpga 
+# Start time: 00:21:28 on Apr 01,2016
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.fpga(fast)
+run -all
+run
+step
+# Nothing left to do.
+step
+# Nothing left to do.
+step
+# Nothing left to do.
+step
+# Nothing left to do.
+step
+# Nothing left to do.
+step
+# Nothing left to do.
+step
+# Nothing left to do.
+# End time: 00:22:02 on Apr 01,2016, Elapsed time: 0:00:34
+# Errors: 0, Warnings: 0

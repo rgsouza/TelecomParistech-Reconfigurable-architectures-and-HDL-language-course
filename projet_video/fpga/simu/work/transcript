@@ -1,0 +1,93 @@
+# //  ModelSim SE-64 10.4c Jul 19 2015 Linux 3.16.0-4-amd64
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# vsim -t 1ps -lib work -L altera_lnsim_ver tb_fpga 
+# Start time: 23:25:52 on Apr 15,2016
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading sv_std.std
+# Loading work.tb_fpga(fast)
+# Loading work.vga_if(fast__1)
+# Loading work.sdram_if(fast__1)
+# Loading work.vga_pkg(fast)
+# Loading work.screen_sv_unit(fast)
+# Loading work.screen(fast)
+# Loading work.fpga(fast)
+# Loading altera_lnsim_ver.altera_generic_pll_functions
+# Loading altera_lnsim_ver.altera_lnsim_functions
+# Loading work.wshb_pll(fast)
+# Loading work.resynchronisation(fast)
+# Loading work.wshb_if(fast__1)
+# Loading work.wshb_if(fast__2)
+# Loading work.wshb_if(fast__3)
+# Loading work.mire(fast)
+# Loading work.wshb_intercon(fast)
+# Loading work.wb16_sdram16(fast)
+# Loading work.wb_bridge_xess(fast)
+# Loading work.xess_sdramcntl(fast)
+# Loading work.resynchronisation(fast__1)
+# Loading work.vga(fast)
+# Loading work.vga_pll(fast)
+# Loading work.fifo_async(fast)
+# Loading work.sdr(fast)
+add wave -position end sim:/tb_fpga/I_fpga/I_intercon/wshb_ifs_mire/*
+# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 1 times, errno 11
+# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 2 times, errno 11
+# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 3 times, errno 11
+# ** Error: Cannot lock WLF file: "vsim.wlf"
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rdesouza  Hostname: a406-06  ProcessID: 13565
+#           Attempting to use alternate WLF file "./wlft2HIALC".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft2HIALC
+add wave -position end sim:/tb_fpga/I_fpga/I_intercon/wshb_ifs_vga/*
+add wave -position 16 sim:/tb_fpga/I_fpga/I_intercon/wshb_ifm/*
+add wave -position 12 sim:/tb_fpga/I_fpga/I_mire/wshb_ifm_mire/*
+add wave -position 19 sim:/tb_fpga/I_fpga/I_vga/*
+run -all
+# Info: =================================================
+# Info:           Generic PLL Summary
+# Info: =================================================
+# Time scale of (tb_fpga.I_fpga.pll.altera_pll_i.new_model.gpll.no_need_to_gen) is  1ps /  1ps
+# Info: hierarchical_name = tb_fpga.I_fpga.pll.altera_pll_i.new_model.gpll.no_need_to_gen
+# Info: reference_clock_frequency = 50.0 MHz
+# Info: output_clock_frequency = 100 MHZ
+# Info: phase_shift = 0 ps
+# Info: duty_cycle = 50
+# Info: sim_additional_refclk_cycles_to_lock = 0
+# Info: output_clock_high_period = 5000.000000
+# Info: output_clock_low_period = 5000.000000
+# Info: hierarchical_name = tb_fpga.I_fpga.I_vga.I_vga_pll.altera_pll_i.new_model.gpll.no_need_to_gen
+# Adjusting output period from 39721.946375 to 39923.039923
+# Info: =================================================
+# Info:           Generic PLL Summary
+# Info: =================================================
+# Time scale of (tb_fpga.I_fpga.I_vga.I_vga_pll.altera_pll_i.new_model.gpll.no_need_to_gen) is  1ps /  1ps
+# Info: hierarchical_name = tb_fpga.I_fpga.I_vga.I_vga_pll.altera_pll_i.new_model.gpll.no_need_to_gen
+# Info: reference_clock_frequency = 27.0 MHz
+# Info: output_clock_frequency = 25.175 MHZ
+# Info: phase_shift = 0 ps
+# Info: duty_cycle = 50
+# Info: sim_additional_refclk_cycles_to_lock = 0
+# Info: output_clock_high_period = 19961.519962
+# Info: output_clock_low_period = 19961.519962
+# dump de l'image :          1
+# dump de l'image :          2
+# dump de l'image :          3
+# dump de l'image :          4
+# dump de l'image :          5
+# ** Note: $finish    : /cal/homes/rdesouza/Desktop/projet_video/fpga/simu/../../fpga/tb_src/tb_fpga.sv(55)
+#    Time: 10000300 ns  Iteration: 0  Instance: /tb_fpga
+# End time: 23:40:44 on Apr 15,2016, Elapsed time: 0:14:52
+# Errors: 4, Warnings: 2

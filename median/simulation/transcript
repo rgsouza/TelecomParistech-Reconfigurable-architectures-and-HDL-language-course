@@ -1,0 +1,124 @@
+# //  ModelSim SE-64 10.4c Jul 19 2015 Linux 3.16.0-4-amd64
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# vsim MCE_tb 
+# Start time: 18:07:05 on Mar 04,2016
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.MCE_tb(fast)
+# Loading work.MCE(fast)
+add wave -position insertpoint sim:/MCE_tb/*
+run
+add wave -position insertpoint  \
+sim:/MCE_tb/I_MCE/A
+add wave -position insertpoint  \
+sim:/MCE_tb/I_MCE/B
+# Causality operation skipped due to absence of debug database file
+run
+# Break key hit
+step
+# Simulation stop requested.
+# 
+# Next activity is in 1 ns.
+step
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.MCE_tb(fast)
+# Loading work.MCE(fast)
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 1 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 1 ns.
+step
+step
+step
+step
+step
+step
+step
+run -all
+# Fin de la simulation sans aucune erreur
+# ** Note: $finish    : /cal/homes/rdesouza/Desktop/SE204/median/simulation/MCE_tb.sv(50)
+#    Time: 1 us  Iteration: 0  Instance: /MCE_tb
+# 1
+# Break at /cal/homes/rdesouza/Desktop/SE204/median/simulation/MCE_tb.sv line 50
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.MCE_tb(fast)
+# Loading work.MCE(fast)
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 1 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 1 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 1 ns.
+step
+step
+step
+step
+step
+step
+step
+run all
+# Invalid time value: all
+run -all
+# Fin de la simulation sans aucune erreur
+# ** Note: $finish    : /cal/homes/rdesouza/Desktop/SE204/median/simulation/MCE_tb.sv(50)
+#    Time: 1 us  Iteration: 0  Instance: /MCE_tb
+# 1
+# Break at /cal/homes/rdesouza/Desktop/SE204/median/simulation/MCE_tb.sv line 50
